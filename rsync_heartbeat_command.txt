@@ -1,0 +1,15 @@
+# Single command to sync all Heartbeat Monitor files to server
+rsync -avzP \
+  heartbeat_monitor.py \
+  heartbeat_config.json \
+  gmail_credentials.json \
+  gmail_token.json \
+  requirements_heartbeat.txt \
+  setup_server.sh \
+  test_gmail.py \
+  SERVER_DEPLOYMENT.md \
+  ERROR_TYPES.md \
+  hm3424@128.122.136.203:~/c2smarter_data/
+
+# Or use the sync script:
+# ./sync_heartbeat_to_server.sh
